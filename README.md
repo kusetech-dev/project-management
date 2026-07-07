@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Freelance Project Tracker
 
 A personal project management tool for tracking freelance work: projects, tasks,
@@ -61,3 +62,6 @@ src/
   pages/                    — Login, Dashboard, Projects, ProjectDetail
   utils/format.js           — Money, date, duration formatting + status/priority config
 ```
+=======
+# project-management
+>>>>>>> b41f94c858cb831b1833d3955475ba0d2b155b87
