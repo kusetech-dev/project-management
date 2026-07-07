@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0f0f10;
+  --color-surface: #171717;
+  --color-surface-hover: #1c1c1c;
+  --color-border: #242424;
+  --color-border-strong: #2e2e2e;
+  --color-text-primary: #ededee;
+  --color-text-secondary: #9a9a9d;
+  --color-text-tertiary: #5e5e62;
+  --color-accent: #3ecf8e;
+  --color-accent-hover: #35b87e;
+  --color-accent-muted: #3ecf8e1a;
+  --color-success: #4ade80;
+  --color-warning: #f0b429;
+  --color-danger: #f3716f;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html, body {
+  background-color: var(--color-base);
+  color: var(--color-text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono-data {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+}
+
+/* Subtle scrollbar that fits the dark, restrained aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a40;
+}
+
+/* Visible keyboard focus, never removed */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
